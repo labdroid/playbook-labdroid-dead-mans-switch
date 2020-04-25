@@ -1,0 +1,11 @@
+---
+- name: Touch proof-of-life file
+  hosts: all
+  gather_facts: false
+  tasks:
+    - file:
+        path: /run/proof-of-life
+        state: touch
+        mode: "u=rw,g=r,o=r"
+      retries: 3
+      delay: 5
