@@ -3,9 +3,8 @@
   hosts: all
   gather_facts: false
   tasks:
-    - file:
-        path: /run/proof-of-life
-        state: touch
-        mode: "u=rw,g=r,o=r"
+    - uri:
+        url: http://didit.labdroid.net:8080/didit/labdroid/IeLCA1olX74XCqbi5b3nJXn2xRIzmfLPVzOXbFo0UzZg+Pe8gxQYKgD4nARKPMIFVIeIrUFIj0CC
+        method: GET
       retries: 3
       delay: 5
