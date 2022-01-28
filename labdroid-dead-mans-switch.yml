@@ -4,7 +4,7 @@
   gather_facts: false
   tasks:
     - uri:
-        url: http://didit.labdroid.net:8080/didit/labdroid/IeLCA1olX74XCqbi5b3nJXn2xRIzmfLPVzOXbFo0UzZg+Pe8gxQYKgD4nARKPMIFVIeIrUFIj0CC
+        url: http://34.73.122.192:8080/didit/labdroid/IeLCA1olX74XCqbi5b3nJXn2xRIzmfLPVzOXbFo0UzZg+Pe8gxQYKgD4nARKPMIFVIeIrUFIj0CC
         method: GET
       retries: 3
       delay: 5
