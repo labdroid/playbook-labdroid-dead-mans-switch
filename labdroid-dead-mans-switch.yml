@@ -1,10 +1,9 @@
 ---
-- name: Touch proof-of-life file
+- name: Hit didit endpoint
   hosts: all
   gather_facts: false
   tasks:
-    - uri:
-        url: http://34.73.122.192:8080/didit/labdroid/IeLCA1olX74XCqbi5b3nJXn2xRIzmfLPVzOXbFo0UzZg+Pe8gxQYKgD4nARKPMIFVIeIrUFIj0CC
-        method: GET
+    - shell: |
+        curl http://34.73.122.192:8080/didit/labdroid/IeLCA1olX74XCqbi5b3nJXn2xRIzmfLPVzOXbFo0UzZg+Pe8gxQYKgD4nARKPMIFVIeIrUFIj0CC
       retries: 3
       delay: 5
